@@ -25,7 +25,7 @@ public class FornecedorService {
         return fornecedorRepository.findById(id).get();
     }
 
-    public void deletarFornecedor(FornecedorModel fornecedorModel) {
-        fornecedorRepository.delete(fornecedorModel);
+    public void deletarFornecedor(Long id) {
+        fornecedorRepository.deleteById(id);
     }
 }
